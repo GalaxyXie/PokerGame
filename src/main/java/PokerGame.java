@@ -90,7 +90,7 @@ public class PokerGame {
                 return o2.getValue().compareTo(o1.getValue());
             }
         });
-        Poker poker = new Poker(cards, range, list);
+        Poker poker = new Poker( range, list);
         if (this.isSequence(cards) && poker.getRange() < 4) {
             poker.setRange(4);
         }
